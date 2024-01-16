@@ -1,0 +1,40 @@
+body {
+    background-image: url(images/portal-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Inconsolata', monospace;
+    font-size: smaller;
+    position: relative;
+    top: 80px;
+    left: 70px;
+}
+
+.banner {
+    width: 1100px;
+    height: 250px;
+}
+
+a {
+    color: black;
+}
+
+main {
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Inconsolata', monospace;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
