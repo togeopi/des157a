@@ -1,0 +1,45 @@
+header {
+    font-family: 'Sixtyfour', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: rgb(119, 255, 126);
+}
+
+#homeButton {
+    font-size: larger;
+}
+
+body {
+    max-width: 900px;
+    font-family: 'Cute Font', sans-serif;
+    color: aliceblue;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    color:rgb(84, 216, 91);
+}
+
+article {
+    margin-top: 70px;
+    font-size: 24px;
+}
+
+#article1 {
+    margin-top: 10px;
+    padding: 20px;
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: rgb(119, 255, 126);
+}
+
+p {
+    font-size: 30px;
+}
