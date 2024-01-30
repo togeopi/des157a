@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <title>experiment 2</title>
+</head>
+
+<!-- Prompt the user for a color that the computer is "thinking of" - either red, yellow, green, or blue. Then pick a random color from an array. If the color entered by the user matches the color picked by the program, it displays the output message "You are right!". Otherwise, it displays "Try again!". (Credit: Krithika Govind) -->
+
+<body>
+    <h1>Experiment 2</h1>
+
+    <script>
+
+      var color = ['red', 'yellow', 'green', 'blue'];
+
+      function guessColor(color) {
+         var whatColor = prompt('what color is your computer thinking of?', '');
+
+         var newColor = color[Math.floor(Math.random()* color.length)];
+
+         if( `${whatColor}` === newColor) {
+         console.log('you are right!');
+         } 
+         else 
+         {
+            console.log('try again :(');
+         }
+
+         return newColor;
+      }
+
+      guessColor('${whatColor}');
+    </script>
+</body>
