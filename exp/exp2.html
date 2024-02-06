@@ -13,14 +13,14 @@
 
     <script>
 
-      var color = ['red', 'yellow', 'green', 'blue'];
+      var colors = ['red', 'yellow', 'green', 'blue'];
 
-      function guessColor(color) {
+      function guessColor() {
          var whatColor = prompt('what color is your computer thinking of?', '');
 
-         var newColor = color[Math.floor(Math.random()* color.length)];
+         var newColor = colors[Math.floor(Math.random()* colors.length)];
 
-         if( `${whatColor}` === newColor) {
+         if( whatColor === newColor) {
          console.log('you are right!');
          } 
          else 
@@ -31,6 +31,6 @@
          return newColor;
       }
 
-      guessColor('${whatColor}');
+      guessColor();
     </script>
 </body>
