@@ -3,13 +3,19 @@ body {
     font-family: 'Dokdo', system-ui;
     background-color: rgb(17, 17, 17);
     color: rgb(172, 8, 8);
-    padding: 100px;
+    margin: 100px;
+    background-image: url(images/madlib-background_.png);
+    background-repeat: no-repeat;
+    background-size:auto;
 }
 
 header {
     font-weight: bolder;
+    margin-bottom: 50px;
     font-size: xx-large;
     animation: bounce 3s infinite;
+    position: relative;
+    bottom: 30px;
 }
 
 form {
@@ -19,15 +25,29 @@ form {
     border-color: darkred;
     font-size: xx-large;
     display: flex;
+    margin-left: 300px;
+    margin-right: 300px;
+    gap: 5px;
     flex-direction: column;
-    padding: 100px;
+    padding: 50px;
+    margin-bottom: 20px;
 }
 
 input[type="text"]:focus {
     border:1px solid #D6D9DC;
     outline: 0;
     box-shadow: 0 4px 8px 0 rgba(95, 0, 0, 0.8), 0 6px 20px 0 rgba(186, 0, 0, 0.5);
-    animation: color 3s infinite;
+}
+
+input[type="submit"]{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(172, 8, 8);
+    cursor: pointer;
 }
 
 @keyframes bounce {
@@ -40,12 +60,41 @@ input[type="text"]:focus {
     }
 }
 
-@keyframes color {
-    
-    0%, 50%, 100% {
-        color: darkred;
-    }
-    25%, 75% {
-        color: rgb(76, 15, 15);
-    }
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 145vh;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: darkred;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: large;
+}
+
+.close {
+    position: relative;
+    top: 280px;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
 }

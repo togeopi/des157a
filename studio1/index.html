@@ -20,25 +20,28 @@
         </header>
 
         <main>
-            <form>
-                <label for="adjective1">Please enter an adjective: </label><input type="text" id="adjective1" required>
+            <form id="userdata">
+                <label for="adjective1">Please enter an adjective: </label><input type="text" id="adjective1" >
 
-                <label for="adjective2">Please enter an adjective: </label><input type="text" id="adjective2" required>
+                <label for="adjective2">Please enter an adjective: </label><input type="text" id="adjective2" >
 
-                <label for="verb1">Please enter a verb: </label><input type="text" id="verb1" required>
+                <label for="verb1">Please enter a verb: </label><input type="text" id="verb1" >
 
-                <label for="noun1">Please enter a noun: </label><input type="text" id="noun1" required>
+                <label for="noun1">Please enter a noun: </label><input type="text" id="noun1" >
 
-                <label for="verb2">Please enter a verb: </label><input type="text" id="verb2" required>
+                <label for="verb2">Please enter a verb: </label><input type="text" id="verb2" >
 
-                <label for="animal">Please enter an animal: </label><input type="text" id="animal" required>
+                <label for="animal">Please enter an animal: </label><input type="text" id="animal" >
 
                 <input type="submit">
             </form>
+
+            <section id="overlay" class="hidden">
+                <article id="madlib"></article>
+                <button class="close">close</button>
+            </section>
+            
         </main>
 
-        <footer>
-            <p>made by clarissa</p>
-        </footer>
     </body>
 </html>
