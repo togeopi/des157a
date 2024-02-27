@@ -32,6 +32,7 @@ img {
     overflow-y: scroll;
 }
 
+/* buttons */
 #left, #right {
     height: 50px;
     width: 50px;
@@ -67,8 +68,10 @@ button:hover {
     border-width: 100px;
     padding: 20px;
     max-height: 400px;
+    margin-top: 50px;
 }
 
+/* main playlists */
 #playlist1, #playlist2, #playlist3, #playlist4 {
     border-radius: 20px;
     background-color: rgb(20, 20, 20);
@@ -83,6 +86,7 @@ button:hover {
     bottom: 1px;
     background-color: rgb(20, 20, 20);
     border-style: none;
+    left: 425px;
 }
 
 .hidden {
@@ -97,23 +101,43 @@ button:hover {
     width: 0px;
 }
 
-#overlay{
+.overlay{
     display: flex;
     flex-direction: column;
-}
-
-#overlay1, #overlay2, #overlay3, #overlay4 {
-    background-color: rgb(18, 18, 18);
-    position: fixed; /* Sit on top of the page content */
-    width: 200%; /* Fll width (cover the whole page) */
-    height: 100%;
-    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0; 
+    width: 100vw;
+    height: 145vh;
 }
 
+/* overlay close button */
+#close1, #close2, #close3, #close4 {
+    height: 50px;
+    width: 40px;
+    font-weight: bolder;
+    font-size: xx-large;
+    border-radius: 78px;
+    border-style: none;
+    background-color:rgb(28, 28, 28);
+    color: aliceblue;
+}
+
+/* playlist overlay */
+#overlay1, #overlay2, #overlay3, #overlay4 {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+/* playlist overlay positioning */
 #title {
     display: flex;
     flex-direction: column;
@@ -127,9 +151,12 @@ button:hover {
     gap: 200px;
 }
 
+/* songs in playlist overlay */
 #list {
     padding-left: 50px;
     padding-right: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 100px;
+    background-color: rgb(16, 16, 16);
 }
