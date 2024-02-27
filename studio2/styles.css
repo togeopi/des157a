@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(11, 11, 11);
+    color: aliceblue;
+    overflow-y: hidden;
+    font-family: "Figtree", sans-serif;
+}
+
+header {
+    margin-left: 20px;
+}
+
+/* style main playlists and side columns*/
+#interact {
+    display: flex;
+    gap: 100px;
+    max-height: 600px;
+}
+
+/* side column */
+#menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    gap: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#menu:hover {
+    overflow-y: scroll;
+}
+
+#left, #right {
+    height: 50px;
+    width: 50px;
+    font-weight: bolder;
+    font-size: xx-large;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    top: 250px;
+    background-color:rgb(28, 28, 28);
+    color: aliceblue;
+}
+
+button {
+    border-radius:10px ;
+    border-style: none;
+    background-color:rgb(28, 28, 28);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:rgb(31, 31, 31);
+    color: rgb(219, 228, 235);
+}
+
+/* interactable playlists */
+#playlists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    border-radius: 20px;
+    background-color: rgb(16, 16, 16);
+    border-width: 100px;
+    padding: 20px;
+    max-height: 400px;
+}
+
+#playlist1, #playlist2, #playlist3, #playlist4 {
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    border-width: 100px;
+    padding: 20px;
+    max-height: 350px;
+}
+
+/* sound bar */
+#bar {
+    position: fixed;
+    bottom: 1px;
+    background-color: rgb(20, 20, 20);
+    border-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+#overlay{
+    display: flex;
+    flex-direction: column;
+}
+
+#overlay1, #overlay2, #overlay3, #overlay4 {
+    background-color: rgb(18, 18, 18);
+    position: fixed; /* Sit on top of the page content */
+    width: 200%; /* Fll width (cover the whole page) */
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+#top {
+    display: flex;
+    padding: 20px;
+    align-content: space-around;
+    gap: 200px;
+}
+
+#list {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    gap: 100px;
+}
