@@ -1,0 +1,73 @@
+body {
+    background-image: url(images/pig_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(255, 148, 200);
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+}
+
+header {
+    font-family: "Rubik Bubbles", system-ui;
+    text-align: center;
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
+#gamecontrol {
+    font-family: "Rubik Bubbles", system-ui;
+}
+
+button {
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: rgb(255, 143, 199);
+    background-color: rgb(255, 174, 214);
+    border-style:solid;
+    color: aliceblue;
+    padding: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#instructions {
+    background-color: rgba(169, 223, 255, 0.8);
+    border-radius: 30px;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    color: aliceblue;
+}
+
+a {
+    color:rgb(255, 148, 200);
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: xx-large;
+    position: relative;
+    top: 290px;
+    left: 360px;
+}
+
+#star {
+    position: relative;
+    top: 350px;
+    left: 450px;
+}
