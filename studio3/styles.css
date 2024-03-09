@@ -5,6 +5,7 @@ body {
     color:rgb(255, 148, 200);
     font-family: "Madimi One", sans-serif;
     text-align: center;
+    margin-top: 5px;
 }
 
 p {
@@ -62,12 +63,34 @@ a {
     font-family: "Rubik Bubbles", system-ui;
     font-size: xx-large;
     position: relative;
-    top: 290px;
-    left: 360px;
+    top: 310px;
+    left: 385px;
 }
 
 #star {
     position: relative;
     top: 350px;
     left: 450px;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#score {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: larger;
+}
+
+#quit {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#startgame {
+    margin-top: 50px;
 }
