@@ -44,3 +44,10 @@ h2 {
     padding: 10px;
     border-radius: 50px;
 }
+
+img {
+    border-width: 10px;
+    border-radius: 10px;
+    border-style:double;
+    border-color:rgb(255, 255, 255);
+}
