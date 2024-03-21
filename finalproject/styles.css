@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(13, 13, 13);
     color: aliceblue;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     font-family: "Figtree", sans-serif;
 }
 
@@ -78,6 +78,7 @@ button:hover {
     border-width: 100px;
     padding: 20px;
     max-height: 350px;
+    max-width: 200px;
 }
 
 /* sound bar */
@@ -161,4 +162,77 @@ button:hover {
     gap: 100px;
     background-color: rgb(16, 16, 16);
 }
+
+/* starting color moods */
+#mood {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    gap: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* start screen */
+#start {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* sound bar */
+#play {
+    display: flex;
+    gap: 85px;
+}
+
+/* individual song ui */
+#mood1, #mood2, #mood3, #mood4 {
+    color: black;
+    padding: 20px;
+    margin-left: 450px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    max-width: 350px;
+    background-color: rgb(22, 22, 91);
+    border-radius: 20px;
+}
+
+/* background color for song ui */
+#mood2 {
+    background-color: rgb(58, 89, 57);
+}
+
+#mood3 {
+    background-color: rgb(91, 22, 32);
+}
+
+#mood4 {
+    background-color: rgb(96, 143, 148);
+}
+
+/* sound bar */
+#forward, #back, #pause{
+    cursor: pointer;
+}
+
+#forward:hover, #back:hover, #pause:hover {
+    opacity: 50%;
+}
+
+/* button to leave song ui */
+#escape1, #escape2, #escape3, #escape4 {
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 
